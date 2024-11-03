@@ -1,0 +1,49 @@
+/* Nav.css */
+
+
+.nav {
+    position: fixed;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 60px); /* Subtract header height */
+    background-color: var(--background-color2); /* White background */
+    color: #4E84C4; /* Text color */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nav a {
+    color: #4E84C4; /* Link color */
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    position: relative; /* Needed for the hover effect */
+}
+
+.nav-option {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10 30px 0 20px;
+    gap: 40px;
+    transition: all 0.1s ease-in-out;
+  }
+  
+
+
+.nav a:hover {
+
+   
+    border-left: 5px solid #4E84C4;
+    
+    background-color: rgba(78, 132, 196, 0.2); /* Light green highlight on hover */
+    border-radius: 4px;
+}
+
+/* Optionally, you can add a transition for smooth hover effect */
+.nav a {
+    transition: background-color 0.3s ease;
+}
